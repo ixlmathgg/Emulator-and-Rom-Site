@@ -43,16 +43,23 @@
 }
 .header__menu ul {
   display: flex;
-  flex-direction: row;
+  outline: none;
+  box-sizing: border-box;
+  justify-content: center;
   gap: 25px;
   align-items: center;
   margin-right: 85px;
   height: 50px;
   border-radius: 8px;
-  font-size: 0px;
 }
 .header__menu ul li {
   list-style: none;
+}
+.header__menu ul li .active {
+  opacity: 0.5;
+  background-color: hsl(46, 65%, 42%);
+  border-radius: 6px;
+  padding: 20px;
 }
 .header__menu ul li a {
   text-decoration: none;
@@ -63,12 +70,12 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
 }
 .header__menu ul li a:hover {
   background-color: hsl(46, 65%, 42%);
-  box-shadow: 0 2px 3px 0 #5f5f5f;
-  padding: 23px;
+  border-radius: 6px;
+  padding: 25px;
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -207,16 +214,16 @@
 .main__text .box h4 {
   font-size: 1.5rem;
 }
-.main__text .RCVAL {
+.main .RCVAL {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.main__text .RCVAL h3 {
-  font-size: 1.3rem;
+.main .RCVAL h3 {
+  font-size: 1.9rem;
   font-weight: 600;
 }
-.main__text .RCVAL button {
+.main .RCVAL button {
   font-size: 1.2rem;
   background-color: red;
   color: white;
@@ -224,7 +231,7 @@
   border: 0px;
   transition: all 0.2s ease-in;
 }
-.main__text .RCVAL button:active {
+.main .RCVAL button:active {
   transform: scale(0.96);
 }
 
@@ -241,12 +248,13 @@
 }
 .romConsoles #box1, .romConsoles #box2, .romConsoles #box3, .romConsoles #box4 {
   height: 200px;
-  width: 200px;
+  width: 250px;
   background-color: rgb(255, 255, 255);
   display: grid;
   place-items: center;
   box-shadow: 3px 5px 5px #918e8e;
   padding-top: 9rem;
+  border-radius: 9px;
 }
 .romConsoles #box1 {
   background-image: url(./Images/images.png);
