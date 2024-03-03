@@ -153,6 +153,17 @@
   background-color: hsl(46, 70%, 31%);
 }
 
+.pagination {
+  display: flex;
+}
+.pagination a {
+  text-decoration: none;
+  color: skyblue;
+}
+.pagination p {
+  color: hsl(0, 0%, 45%);
+}
+
 .main {
   height: 80%;
   align-items: center;
@@ -245,6 +256,14 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+.romConsoles [class^=row] a {
+  text-decoration: none;
+  color: black;
+}
+.romConsoles [class^=row] a:hover {
+  border: 2px solid red;
+  border-radius: 9px;
 }
 .romConsoles #box1, .romConsoles #box2, .romConsoles #box3, .romConsoles #box4 {
   height: 200px;

@@ -173,6 +173,19 @@
 .mobile-nav a:hover{
     background-color: hsl(46, 70%, 31%);
 }
+
+.pagination{
+
+    display: flex;
+    a{
+        text-decoration: none;
+        color: skyblue;
+    }
+
+    p{
+        color: hsl(0, 0%, 45%);
+    }
+}
 .main{
     height: 80%;
     align-items: center;
@@ -279,6 +292,16 @@
         display: flex;
         flex-direction: row;
         gap: 30px;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:hover{
+            border: 2px solid red;
+            border-radius: 9px;
+        }
     }
     #box1, #box2, #box3, #box4{
         height: 200px;
